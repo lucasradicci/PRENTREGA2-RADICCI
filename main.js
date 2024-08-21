@@ -19,6 +19,20 @@ function buscarProductoPorId(id) {
     return productos.find(producto => producto.id === id);
 }
 
+function realizarCompra(id, cantidad){
+    const producto = buscarProductoPorId(id);
+    if(producto){
+        if(producto.stock >= cantidad){
+            producto.stock -= cantidad;
+            const total = producto.precio * cantidad;
+            console.log(`Has comprado ${cantidad} ${producto.nombre} por un total de $${total}.`);
+        } else {
+            console.log("Stock insuficiente.");
+        }
+    } else {
+        console.log("Producto no encontrado.");
+    }
+}
 
 
 
