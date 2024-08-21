@@ -34,6 +34,25 @@ function realizarCompra(id, cantidad){
     }
 }
 
+function simuladorDeCompra(){
+    mostrarProductos();
+
+    const idProducto = parseInt(prompt("Ingresa el ID del producto que quieres comprar:"), 10);
+    const cantidad = parseInt(prompt("Ingresa la cantidad que deseas comprar:"), 10);
+    
+    realizarCompra(idProducto, cantidad);
+    
+    const continuar = prompt("¿Deseas comprar otro producto? (si/no)").toLowerCase();
+    if (continuar === 'si') {
+        simuladorDeCompra();
+    } else {
+        console.log("Gracias por tu compra. ¡Hasta luego!");
+    }
+}
+
+
+
+simuladorDeCompra()
 
 
 
