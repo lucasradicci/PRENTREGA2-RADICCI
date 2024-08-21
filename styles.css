@@ -3,7 +3,9 @@ h1{
     text-transform: uppercase;
     text-align: center;
 }
+
+
 h2{
-    color: green;
-    background-color: bisque;
+    color: red;
+    background-color: black;
 }
