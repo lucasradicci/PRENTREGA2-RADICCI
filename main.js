@@ -8,6 +8,12 @@ const productos = [
 ];
 
 
+function mostrarProductos() {
+    productos.forEach(producto => {
+        console.log(`ID: ${producto.id} - Nombre: ${producto.nombre} - Precio: $${producto.precio} - Stock: ${producto.stock}`);
+    });
+}
+
 
 
 
