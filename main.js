@@ -7,3 +7,32 @@ const productos=[
     {id:5, nombre: "HORNO ELECTRICO", precio:200, stock:17},
 ];
 
+function mostrarProductos() {
+    productos.forEach(producto => {
+        console.log(`ID: ${producto.id} - Nombre: ${producto.nombre} - Precio: $${producto.precio} - Stock: ${producto.stock}`);
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//mostrarProductos()
