@@ -13,26 +13,30 @@ function mostrarProductos() {
     });
 }
 
+function buscarProductoPorId(id){
+    return productos.find(producto=>
+        producto.id===id
+    )
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 //mostrarProductos()
+//buscarProductoPorId()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
